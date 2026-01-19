@@ -1,0 +1,27 @@
+.hero{
+    background: url('../assets/hero-bg.png');
+    height:700px;
+    background-position: center;
+}
+#grad{
+    background: linear-gradient(to right,yellow, #FB09B4, #9100F8);
+}
+@theme{
+    --color-regal-green: #00FF88;
+}
+navbar ul li{
+    color:white;
+}
+.choose h3{
+    color:white;
+    font-weight: 600;
+    font-size: 24px;
+}
+.choose p{
+    color:white;
+       font-weight: 400;
+    font-size: 16px;
+}
+.choose{
+    padding:100px 0;
+}
