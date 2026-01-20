@@ -6,6 +6,11 @@
 #grad{
     background: linear-gradient(to right,yellow, #FB09B4, #9100F8);
 }
+navbar span,footer span{
+      background: linear-gradient(to right,yellow, #FB09B4, #9100F8);
+       -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @theme{
     --color-regal-green: #00FF88;
 }
