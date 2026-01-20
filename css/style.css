@@ -6,6 +6,21 @@
 #grad{
     background: linear-gradient(to right,yellow, #FB09B4, #9100F8);
 }
+
+@keyframes animation{
+   0%   {background-color:  #FB09B4;}
+  25%  {background-color: #9100F8;}
+  50%  {background-color: yellow;}
+  100% {background-color: transparent;}
+}
+.btn1:hover{
+  background-color: #FB09B4;
+  animation-name:animation;
+  animation-duration: 4s; 
+  cursor:pointer; 
+}
+
+
 navbar span,footer span{
       background: linear-gradient(to right,yellow, #FB09B4, #9100F8);
        -webkit-background-clip: text;
