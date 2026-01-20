@@ -25,3 +25,16 @@ navbar ul li{
 .choose{
     padding:100px 0;
 }
+.feature h3{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+.feature p{
+    color:white;
+    font-size:16px;
+    font-weight:400;
+}
+footer{
+    background: url('../assets/footer-bg.png');
+}
