@@ -7,26 +7,27 @@
     <link href="css/style.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div class="bg-[#1A0B2E]">
-        <navbar class="max-w-5xl mx-auto justify-between flex py-6">
+        <navbar class="max-w-5xl mx-auto flex flex-col gap-10 justify-center items-center py-6 md:flex-row md:gap-60">
             <h3 class="font-bold text-white text-3xl">Tech<span>Wave</span></h3>
-            <ul class="flex gap-10">
+            <ul class="flex gap-10 flex flex-start">
                 <li>About</li>
                  <li>Episode</li>
                   <li>Host</li>
             </ul>
-            <button id="grad" class="px-8 py-2 rounded-full text-white border-[0]">Subcribe</button>
+            <button id="grad" class="px-8 py-2 rounded-full text-white border-[0]">Subcribe<i class="fa-solid fa-arrow-right ml-1"></i></button>
         </navbar>
         </div>
-        <section class="hero flex flex-col gap-6 justify-center items-center">
-            <div class="hero-img rounded-full h-50 w-50 mx-auto my-0 justify-center items-center" id="grad">
-                <img src="assets/microphone.png">
+        <section class="hero flex flex-col gap-6 justify-center items-center p-5">
+            <div class="hero-img rounded-full h-50 w-50 mx-auto my-0 justify-center  flex items-center border-4 border-[#2A186C]" id="grad">
+                <img src="assets/microphone.png" class="w-16 h-26">
             </div>
-            <h1 class="text-white font-bold text-5xl">TechWave</h1>
-            <p class="text-base text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            <h1 class="text-white font-extrabold text-[40px] md:font-bold md:text-5xl">TechWave</h1>
+            <p class="text-base text-white text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
             <div class="hero-btn flex gap-5">
                 <button id="grad" class="px-7 py-1 rounded-3xl text-white font-base"><i></i>Listen on Spotify</button>
                 <button class="bg-transparent text-[#00FF88] border-2 border-[#00FF88] px-7 py-1 rounded-3xl">Subscribe</button>
@@ -36,31 +37,31 @@
    <main>
 <section class="about bg-[#1A0B2E] pb-20">
 <div class="max-w-5xl mx-auto flex flex-col justify-center items-center gap-6">
-    <h1 class="text-white font-bold text-5xl">About the Podcast</h1>
-    <p class="text-base text-white text-center w-[650px]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+    <h1 class="text-white font-bold text-[32px] text-center md:text-5xl">About the Podcast</h1>
+    <p class="text-base text-white text-center w-[350px] md:w-[650px]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
 We break down complex topics into digestible insights, explore productivity strategies that actually work,
 and share stories of personal growth from industry leaders.</p>
 
 <p class="text-base text-white text-center mt-4 mb-20">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
-<div class="abt-section flex justify-between items-center gap-60">
+<div class="grid grid-cols-2 grid-rows-2 justify-between items-center px-3 md:abt-section md:grid-cols-4 md:grid-rows-1  md:gap-40 ">
 
     <div>
-        <h1 class="text-[#00FF88] font-extrabold text-5xl text-center">150K+</h1>
+        <h1 class="text-[#00FF88] font-extrabold text-[40px] text-center md:text-5xl">150K+</h1>
         <p class="text-white text-center mt-3">Monthly Listeners</p>
     </div>
 
      <div>
-        <h1 class="text-[#00FF88] font-extrabold text-5xl text-center">200+</h1>
+        <h1 class="text-[#00FF88] font-extrabold text-[40px] text-center md:text-5xl">200+</h1>
         <p class="text-white  text-center mt-3">Episodes Published</p>
     </div>
 
      <div>
-        <h1 class="text-[#00FF88] font-extrabold text-5xl text-center">4.9★</h1>
+        <h1 class="text-[#00FF88] font-extrabold text-[40px] text-center md:text-5xl">4.9★</h1>
         <p class="text-white  text-center mt-3">Average Rating</p>
     </div>
 
      <div>
-        <h1 class="text-[#00FF88] font-extrabold text-5xl text-center">50+</h1>
+        <h1 class="text-[#00FF88] font-extrabold text-[40px] text-center md:text-5xl">50+</h1>
         <p class="text-white  text-center mt-3">Industry Experts</p>
     </div>
 </div>
@@ -68,10 +69,10 @@ and share stories of personal growth from industry leaders.</p>
 </section>
 <section class="choose bg-[#230e3d] justify-center mx-auto">
 
-    <div class="max-w-5xl justify-center mx-auto py-10 flex flex-col">
-
-<div class="grid grid-cols-3 grid-rows-2 gap-x-4 gap-y-4">
-<div class="row-span-2 p-10 bg-[#2a0f4d] rounded-3xl">
+    <div class="w-full md:max-w-5xl justify-center mx-auto py-1 flex flex-col md:py-10">
+<h1 class="text-white text-[32px] font-bold text-center mb-7 mb:text-4xl">Why Choose Techwave</h1>
+<div class="grid grid-cols-1 grid-rows-3 gap-x-1 gap-y-4 md:grid-cols-3 px-3 md:grid-rows-2 md:gap-x-4">
+<div class="row-span-1 md:row-span-2 p-10 bg-[#2a0f4d] rounded-3xl">
     <img src="assets/headphone.png" class="h-10 w-10">
     <h3 class="mt-3">Premium Audio Quality</h3>
     <p class="mt-3">Experience crystal-clear sound with professional-grade 
@@ -79,27 +80,27 @@ and share stories of personal growth from industry leaders.</p>
          episode is mastered for optimal listening across all 
          devices and platforms.</p>
 </div>
-<div class="col-span-2 p-10 bg-[#2a0f4d] rounded-3xl">
+<div class="col-span-2 md:cols-span-1 p-10 bg-[#2a0f4d] rounded-3xl">
  <img src="assets/device.png" class="h-10 w-10">
     <h3 class="mt-2">Mobile Friendly</h3>
     <p class="mt-1">Listen on the go with seamless mobile experience and offline downloads.</p>
 </div>
-<div class="col-span-2 p-5 bg-[#2a0f4d] rounded-3xl">
+<div class="col-span-2 md:cols-span-1 p-10 bg-[#2a0f4d] rounded-3xl">
  <img src="assets/location.png" class="h-10 w-10">
     <h3 class="mt-2">Global Community</h3>
     <p class="mt-1">Connect with tech enthusiasts from over 120 countries worldwide.</p>
 </div>
 </div>
 
-<div class="grid grid-cols-3 grid-rows-1 gap-x-4 gap-y-4 my-4">
+<div class="grid grid-cols-1 grid-rows-2 gap-y-4 px-3 mt-4 md:grid-rows-1 md:grid-cols-3 md:my-4 md:gap-x-4 md:gap-y-4 my-1">
 
-<div class="col-span-2 p-10 bg-[#2a0f4d] rounded-3xl">
+<div class="col-span-1 md:col-span-2 p-10 bg-[#2a0f4d] rounded-3xl">
  <img src="assets/zap-fast.png" class="h-10 w-10">
     <h3 class="mt-2">Exclusive Interviews</h3>
     <p class="mt-1">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, 
         diving deep into their journeys, failures, and success strategies.</p>
 </div>
-<div class="col-span-1 p-5 bg-[#2a0f4d] rounded-3xl">
+<div class="col-span-1 p-10 bg-[#2a0f4d] rounded-3xl">
  <img src="assets/resource.png" class="h-10 w-10">
     <h3 class="mt-2">Rich Resources</h3>
     <p class="mt-1">Access show notes, transcripts, and additional learning materials for every episode.</p>
@@ -110,31 +111,34 @@ and share stories of personal growth from industry leaders.</p>
 
 </section>
 
-<section class="feature bg-[#1a0b2e] p-20">
-    <h2>Featured Episodes</h2>
-    <div class="grid grid-cols-3 grid-rows-1 justify-center items-center mx-auto max-w-5xl 
-    gap-x-6 gap-y-3">
+<section class="feature bg-[#1a0b2e] py-10 px-3 md:p-10">
+    <h2 class="text-white text-4xl font-bold text-center mb-7">Featured Episodes</h2>
+    <div class="grid grid-cols-1 grid-rows-3 gap-y-10 md:grid-cols-3 md:grid-rows-1 md:justify-center md:items-center md:mx-auto md:max-w-5xl 
+    md:gap-x-6 md:gap-y-3">
 <div class="bg-[#250d44] rounded-2xl">
     <iframe class="w-full h-[250px]"  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
 </iframe>
-<h3 class="p-5">The Future of AI in Everyday Life</h3>
-<p class="px-5 pb-15">Exploring how artificial intelligence is transforming our
+<h3 class="p-3">The Future of AI in Everyday Life</h3>
+<p class="px-3 pb-3">Exploring how artificial intelligence is transforming our
      daily routines and what to expect in the next decade.</p>
+     <p class="icon ml-3 mb-3"><i class="fa-solid fa-clock"></i>42min</p>
 </div>
 
 
 <div class="bg-[#250d44] rounded-2xl">
     <iframe class="w-full h-[250px]" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
 </iframe>
-<h3 class="p-5">Building Better Habits for Remote Work</h3>
-<p class="px-5 pb-15">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+<h3 class="p-3">Building Better Habits for Remote Work</h3>
+<p class="px-3 pb-3">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+<p class="icon ml-3 mb-3"><i class="fa-solid fa-clock"></i>35min</p>
 </div>
 
 <div class="bg-[#250d44] rounded-2xl">
-    <iframe class="w-full h-[250px]"  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+    <iframe class="w-[99%] h-[250px]"  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
 </iframe>
-<h3 class="p-5">Career Growth in Tech: A Roadmap</h3>
-<p class="px-5 pb-15">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+<h3 class="p-3">Career Growth in Tech: A Roadmap</h3>
+<p class="px-3 pb-3">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+<p class="icon ml-3 mb-3"><i class="fa-solid fa-clock"></i>51min</p>
 </div>
 
 
@@ -143,22 +147,22 @@ and share stories of personal growth from industry leaders.</p>
 </section>
 
 
-<section class="host bg-[#1a0b2e] rounded-xl py-20">
+<section class="host bg-[#1a0b2e] py-20 px-3 md:px-0">
     <h2 class="text-white text-center font-bold text-3xl mb-8">Meet the Host</h2>
-    <div class="flex gap-5 bg-[#250e44] max-w-5xl mx-auto p-5">
-<div>
+    <div class="flex flex-col md:flex-row md:gap-5 bg-[#250e44] md:max-w-5xl md:mx-auto md:p-5 md:rounded-2xl ">
+<div class="justify-center items-center md:justify-start">
  
-<img src="../assets/host.png" alt="">
+<img src="../assets/host.png" class="place-self-center md" alt="">
 </div>
 
-<div class="content justify-center flex flex-col gap-2">
+<div class="content justify-center p-3 md:justify-start md:items-start flex flex-col gap-1">
 
-    <h2 class="text-white">Alex Kumar</h2>
-    <p class="text-white w-3xl">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years,
+    <h2 class="text-white text-center md:text-left">Alex Kumar</h2>
+    <p class="text-white w-1xl text-center md:w-3xl pt-3 pb-3  md:text-left">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years,
          working with startups and Fortune 500 companies. Through TechWave,
           Alex shares insights from industry leaders and practical advice for 
           anyone looking to grow in tech.</p>
-          <div class="flex gap-3">
+          <div class="flex gap-3 justify-center md:justify-start">
             <div><img src="assets/linkedin.png"></div>
             <div><img src="assets/x.png"></div>
             <div><img src="assets/instagram.png"></div>
@@ -174,9 +178,9 @@ and share stories of personal growth from industry leaders.</p>
 </section>
    </main>
    <footer class="justify-center flex flex-col items-center">
-    <h2 class="text-white text-center text-5xl font-[700] mt-38">Tech<span>Wave</span></h2>
+    <h2 class="text-white text-center text-[32px] md:text-5xl font-[700] mt-38">Tech<span>Wave</span></h2>
     <div class="flex gap-5 text-center mt-5">
-    <ul class="flex gap-5 text-center">
+    <ul class="grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 md:gap-x-8 md:gap-y-2 text-center">
         <li class="flex text-white items-center gap-2"><img src="assets/spotify.png" class="w-4 h-4">Spotify</li>
         <li class="flex text-white items-center gap-2"><img src="assets/apple-podcast.png" class="w-4 h-4">Apple Podcast</li>
         <li class="flex text-white items-center gap-2"><img src="assets/youtube-podcast.png" class="w-4 h-4">Youtube</li>
